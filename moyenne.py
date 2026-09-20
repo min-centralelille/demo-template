@@ -22,12 +22,8 @@ def moyenne(valeurs):
 
     ---
     """
-    #print("!! TODO : Compléter la fonction moyenne !!", end=" ")
-    #pass
-    if len(valeurs) ==0 : 
-        raise ValueError
-    else:
-        return sum(valeurs)/len(valeurs)
+    print("!! TODO : Compléter la fonction moyenne !!", end=" ")
+    pass
 
 
 if __name__ == "__main__":

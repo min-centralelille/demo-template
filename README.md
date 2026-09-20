@@ -171,7 +171,7 @@ Envoyez le commit sur GitHub :
 git push
 ```
 
-Une manière plus simple (mais magique) de réaliser ces opérations est d'utiliser le menu *Source Control* de Visual Studio, et de réaliser l'opération *Commit & Push*. 
+Une manière plus simple (mais magique) de réaliser ces opérations est d'utiliser le menu *Source Control* de Visual Studio, et de réaliser l'opération *Commit & Push*, après avoir sélectionné les nouveaux fichiers à versionner en cliquant sur le `+` situé à droite de chaque fichier.
 
 
 Ouvrez ensuite votre dépôt GitHub dans le navigateur de votre PC et vérifiez que tous les fichiers de votre projet dans Codespaces ont bien été ajoutés à votre dépôt distant. 
