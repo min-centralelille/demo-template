@@ -1,8 +1,7 @@
 """Tests de la fonction `moyenne`"""
 
-#### NOTES ####
-# Ce fichier contient volontairement des erreurs de qualité de code
-# mais il reste fonctionnel 
+# NB: Ce fichier contient volontairement des erreurs de qualité de code
+# mais il reste fonctionnel
 
 from rich.markdown import Markdown
 from rich.console import Console

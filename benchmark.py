@@ -1,7 +1,6 @@
 """Mesure les performances de la fonction `moyenne`"""
 
-#### NOTES ####
-# Ce fichier ne doit pas être modifié
+# NB: Ce fichier ne doit pas être modifié
 
 from pathlib import Path
 from timeit import timeit
@@ -12,12 +11,14 @@ from moyenne import moyenne
 
 
 def calcul(valeurs):
-    """Calcule la moyenne d'une liste de valeurs à l'aide de la fonction `moyenne`."""
+    """Calcule la moyenne d'une liste de valeurs \
+    à l'aide de la fonction `moyenne`."""
     return moyenne(valeurs)
+
 
 def benchmark():
     """Mesure les performances de la fonction `moyenne`."""
-    n_values = [100,10**3, 10**4, 10**5]
+    n_values = [100, 10**3, 10**4, 10**5]
     temps = []
 
     for n in n_values:
@@ -42,7 +43,6 @@ def benchmark():
     plt.savefig(fichier)
     print(f"Graphique enregistré dans : {fichier}")
 
+
 if __name__ == "__main__":
     benchmark()
-
-

@@ -1,13 +1,13 @@
 """Ce module fournit une fonction pour calculer une moyenne de valeurs"""
 
-#### NOTES ####
-# Ce fichier contient du code à compléter
+# NB: Ce fichier contient du code à compléter
 
 from rich.markdown import Markdown
 from rich.console import Console
 
+
 def moyenne(valeurs):
-    #docstrings en markdown
+    # docstrings en markdown
     """
     # Calcule la moyenne des valeurs.
 
@@ -22,13 +22,9 @@ def moyenne(valeurs):
 
     ---
     """
-    #print("!! TODO : Compléter la fonction moyenne !!", end=" ")
-    #pass
+    print("!! TODO : Compléter la fonction moyenne !!", end=" ")
+    pass
 
-    if valeurs is []: 
-        raise ValueError
-    else:
-        return sum(valeurs) / len(valeurs)
 
 if __name__ == "__main__":
     Console().print(Markdown(moyenne.__doc__))
