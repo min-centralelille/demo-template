@@ -66,21 +66,21 @@ make check
 
 - Corrigez les problèmes signalés jusqu'à obtenir des affichages qui vous conviennent. L'objectif est d'obtenir un code respectant les conventions de qualité attendues, ou d'assumer la responsabilité des suggestions que vous choisissez de ne pas traiter.
 
-- La commande `ruff` propose diverses options pour vous aider à résoudre les problèmes rencontrés :
+La commande `ruff` propose diverses options pour vous aider à résoudre les problèmes rencontrés :
 
--- Observer les modifications proposées par Ruff avant de les appliquer :
+- Observer les modifications proposées par Ruff avant de les appliquer :
 
 ```bash
 ruff check --diff .
 ```
 
--- Appliquer les modifications automatiquement : 
+- Appliquer les modifications automatiquement : 
 
 ```bash
 ruff check --fix .
 ```
 
--- Formater le code :
+- Formater le code :
 
 ```bash
 ruff format .
