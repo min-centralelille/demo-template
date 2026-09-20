@@ -20,16 +20,16 @@
 
 On souhaite écrire une fonction permettant de calculer la moyenne des valeurs contenues dans une liste.
 
-La fonction doit avoir la forme :
+- La fonction doit avoir la forme :
 
 ```python
 def moyenne(valeurs):
     ...
 ```
 
-La fonction doit retourner la moyenne des valeurs de la liste qui lui est passée en paramètres.  
+- La fonction doit retourner la moyenne des valeurs de la liste qui lui est passée en paramètres.  
 
-Testez votre fonction en utilisant le *main guard* du fichier moyenne.py, en exécutant directement le fichier python depuis le terminal : 
+- Testez votre fonction en utilisant le *main guard* du fichier moyenne.py, en exécutant directement le fichier python depuis le terminal : 
 
 ```bash
 python3 moyenne.py
@@ -62,25 +62,25 @@ Dans le terminal, exécutez :
 make check
 ```
 
-Cette commande affiche les problèmes détectés concernant la qualité du code.
+- Cette commande affiche les problèmes détectés concernant la qualité du code.
 
-Corrigez les problèmes signalés jusqu'à obtenir des affichages qui vous conviennent. L'objectif est d'obtenir un code respectant les conventions de qualité attendues, ou d'assumer la responsabilité des suggestions que vous choisissez de ne pas traiter.
+- Corrigez les problèmes signalés jusqu'à obtenir des affichages qui vous conviennent. L'objectif est d'obtenir un code respectant les conventions de qualité attendues, ou d'assumer la responsabilité des suggestions que vous choisissez de ne pas traiter.
 
-La commande `ruff` propose diverses options pour vous aider à résoudre les problèmes rencontrés :
+- La commande `ruff` propose diverses options pour vous aider à résoudre les problèmes rencontrés :
 
-- Observer les modifications proposées par Ruff avant de les appliquer :
+-- Observer les modifications proposées par Ruff avant de les appliquer :
 
 ```bash
 ruff check --diff .
 ```
 
-- Appliquer les modifications automatiquement : 
+-- Appliquer les modifications automatiquement : 
 
 ```bash
 ruff check --fix .
 ```
 
-- Formater le code :
+-- Formater le code :
 
 ```bash
 ruff format .
@@ -92,19 +92,19 @@ ruff format .
 
 On souhaite maintenant vérifier automatiquement que `moyenne` fonctionne correctement. Pour cela, nous utilisons la commande `pytest`, qui exploite le fichier *test_moyenne.py*. 
 
-Les tests doivent pouvoir être exécutés avec : 
+- Les tests peuvent être exécutés avec : 
 
 ```bash
 pytest
 ```
 
-ou de manière équivalente, avec la règle `test` du fichier *Makefile* : 
+- Ou, de manière équivalente, avec la règle `test` du fichier *Makefile* : 
 
 ```bash
 make test
 ```
 
-Un test vérifie notamment qu'une erreur `ValueError` est bien levée lorsque la liste est vide.
+- Un test vérifie notamment qu'une erreur `ValueError` est bien levée lorsque la liste est vide.
 Corrigez la fonction `moyenne` si nécessaire afin que tous les tests passent.
 
 ---
@@ -135,7 +135,7 @@ make doc
 
 - Un répertoire `docs` est créé, contenant des fichiers HTML de documentation, à l'aide des annotations docstrings présentes dans les fichiers de code python. 
 
-- Vérifiez la présence de ce répertoire dans le répertoire du projet. 
+- Vérifiez la présence de ce répertoire dans l'aborescence du projet. 
 
 - Pour afficher le contenu des fichiers HTML générés, il vous faut un navigateur, ce que Codespaces ne fournit pas... 
 
@@ -162,7 +162,7 @@ git add .
 - Créez un commit :
 
 ```bash
-git commit -m "Documentation du projet"
+git commit -m "Message de Commit"
 ```
 
 Envoyez le commit sur GitHub :
@@ -171,8 +171,8 @@ Envoyez le commit sur GitHub :
 git push
 ```
 
-Une manière plus simple (mais magique) de réaliser ces opérations est d'utiliser le menu *Source Control* de Visual Studio, et de réaliser l'opération *Commit & Push*, après avoir sélectionné les nouveaux fichiers à versionner en cliquant sur le `+` situé à droite de chaque fichier.
+- Une manière plus simple (mais magique) de réaliser ces opérations est d'utiliser le menu *Source Control* de Visual Studio, et de réaliser l'opération *Commit & Push*, après avoir sélectionné les nouveaux fichiers à versionner en cliquant sur le `+` situé à droite de chaque fichier.
 
 
-Ouvrez ensuite votre dépôt GitHub dans le navigateur de votre PC et vérifiez que tous les fichiers de votre projet dans Codespaces ont bien été ajoutés à votre dépôt distant. 
+- Ouvrez ensuite votre dépôt GitHub dans le navigateur de votre PC et vérifiez que tous les fichiers de votre projet dans Codespaces ont bien été ajoutés à votre dépôt distant. 
 
