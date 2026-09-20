@@ -1,4 +1,4 @@
-.PHONY: all test check format benchmark  info doc clean
+.PHONY: all test check format benchmark  info doc clean readme
 
 SEP="------------------------------------------------------------------------------------------------------------------------------"
 define cartouche
@@ -8,7 +8,10 @@ endef
  
 #commencer une ligne par @ permet de spécifier un commentaire
 info: 
-	@echo "Choisir une cible parmi man, format, check, doc, test, benchmark, all"
+	@echo "Choisir une cible parmi readme, man, format, check, doc, test, benchmark, all"
+
+readme: 
+	lowdown -tterm README.md | more
 
 all: format check doc test benchmark
 

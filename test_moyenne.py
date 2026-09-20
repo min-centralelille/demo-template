@@ -24,8 +24,7 @@ def test_moyenne_liste_vide():
     try:
         moyenne([])
         assert False
-    except :
-        "Il faudrait tester précisément une ValueError"
+    except ValueError :
         assert True
 
 if __name__ == "__main__":

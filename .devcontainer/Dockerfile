@@ -9,6 +9,7 @@ RUN apt-get update && \
         nano \
         man-db \
         manpages \
+        lowdown \
     && rm -rf /var/lib/apt/lists/*
 
 RUN python -m pip install --no-cache-dir \
